@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>DOM Interativo</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    button {
+        margin: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    input {
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+    .secao {
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>DOM: Página Interativa</h1>
+
+<div class="secao">
+    <button id="incrementar">Incrementar</button>
+    <button id="decrementar">Decrementar</button>
+    <p id="contador">0</p>
+</div>
+
+<div class="secao">
+    <input type="text" id="inputTexto" placeholder="Digite algo...">
+    <p id="contadorCaracteres">0 caracteres</p>
+    <div id="paragrafos"></div>
+</div>
+
+<div class="secao">
+    <label>Tipo de lista:</label>
+    <select id="tipoLista">
+        <option value="ul">Lista Não Ordenada</option>
+        <option value="ol">Lista Ordenada</option>
+    </select>
+    <button id="adicionarLista">Adicionar Lista</button>
+
+    <div id="listas"></div>
+</div>
+
+<div class="secao">
+    <button id="resetar">Resetar Tudo</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
